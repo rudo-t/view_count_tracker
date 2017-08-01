@@ -100,7 +100,7 @@ class AutomatedTracker():
         # append to google sheet
         self.google_sheets.load(zendesk_data)
 
-
+#helper function to ensure all arguments are provided
 def enter_zendesk_details():
     subdomain = input('enter zendesk subdomain with tickets to be tracked :')
     while not subdomain:
@@ -119,9 +119,8 @@ def enter_zendesk_details():
 if __name__ == '__main__':
 
     subdomain, email, zendesk_api_token, view_ids = enter_zendesk_details()
-    # enter_zendesk_details()
-    # inititalise data
-    # obtain google sheets access
+
+# obtain google sheets access
     google_interface = GoogleSheets()
 
 # create google sheet
