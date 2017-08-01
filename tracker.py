@@ -4,10 +4,7 @@ import threading
 import google_credentials
 from apiclient import discovery
 
-
-from pprint import pprint
-
-
+#class for google sheets interface
 class GoogleSheets():
     def __init__(self):
         # establish credentials for google sheets access
@@ -100,7 +97,7 @@ class AutomatedTracker():
         threading.Timer(600.0, self.start).start()
         # hit zendesk api endpoint
         zendesk_data = self.zendesk.get()
-        # load google sheet
+        # append to google sheet
         self.google_sheets.load(zendesk_data)
 
 
