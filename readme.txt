@@ -23,7 +23,7 @@ Directions:
 
     https://developers.google.com/sheets/api/quickstart/python.
 
-3.Place the 'client_secret.json' file in the view_count_tracker working directory.
+3.Place the 'client_secret.json' file in the tracker.py working directory, google_credentials.py should also be in this directory.
 
 4.At the command line, install necessary packages with the following command
 
